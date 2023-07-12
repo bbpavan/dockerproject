@@ -1,22 +1,15 @@
 version: '3'
 services:
-  tarin:
-    image: rahamshaik/phonepaytrain:v1
+  train:
+    image: bbpavan/phonepetrain:v1
     ports:
-      - "8005:80"
-    deploy:
-      replicas: 3
-
+      - "8001:80"
   movie:
-    image: rahamshaik/phonepaymovie:v1
+    image: bbpavan/phonepemovie:v1
     ports:
-      - "8006:80"
-    deploy:
-      replicas: 3
-      
+      - "8002:80"
   recharge:
-    image: rahamshaik/phonepayrecharge:v1
+    image: bbpavan/phoneperecharge:v1
     ports:
-      - "8007:80"
-    deploy:
-      replicas: 3
+      - "8003:80"
+    
